@@ -16,3 +16,8 @@ https://www.kaggle.com/datasets/shivamb/netflix-shows
 https://www.kaggle.com/datasets/shivamb/amazon-prime-movies-and-tv-shows
 
 https://www.kaggle.com/datasets/shivamb/disney-movies-and-tv-shows
+
+To install the required Python packages, run the following command:
+
+```sh
+pip install -r requirements.txt
