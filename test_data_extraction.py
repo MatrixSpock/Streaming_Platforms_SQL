@@ -2,7 +2,7 @@
 from data_extraction import load_datasets
 
 def test_data_extraction():
-    amazon_df, disney_df, netflix_df = load_datasets('config.yml')
+    amazon_df, disney_df, netflix_df = load_datasets()
 
     # Check that the data frames are not empty
     assert not amazon_df.empty, "Amazon data frame is empty"
