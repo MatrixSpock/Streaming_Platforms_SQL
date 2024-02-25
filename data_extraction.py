@@ -29,12 +29,12 @@ def load_datasets():
     }
 
     # Read dataset paths from environment variables
-    dataset1_path = os.getenv('DATASET1_PATH')
-    dataset2_path = os.getenv('DATASET2_PATH')
-    dataset3_path = os.getenv('DATASET3_PATH')
+    # dataset1_path = os.getenv('DATASET1_PATH')
+    # dataset2_path = os.getenv('DATASET2_PATH')
+    # dataset3_path = os.getenv('DATASET3_PATH')
 
-    amazon_df = pd.read_csv(dataset1_path)
-    disney_df = pd.read_csv(dataset2_path)
-    netflix_df = pd.read_csv(dataset3_path)
+    amazon_df = pd.read_csv('datasets/amazon_prime_titles.csv')
+    disney_df = pd.read_csv('datasets/disney_plus_titles.csv')
+    netflix_df = pd.read_csv('datasets/netflix_titles.csv')
 
     return amazon_df, disney_df, netflix_df
