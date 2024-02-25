@@ -73,9 +73,9 @@ jobs:
           python "$script"
         done
 
-    # # Use the MYSQL environment variables as needed in your scripts or tests
-    # env:
-    #   MYSQL_HOST: 127.0.0.1
-    #   MYSQL_USER: root
-    #   MYSQL_PASSWORD: password
-    #   MYSQL_DB: Group_5
+    # Use the MYSQL environment variables as needed in your scripts or tests
+    env:
+      MYSQL_HOST: 127.0.0.1
+      MYSQL_USER: root
+      MYSQL_PASSWORD: root
+      MYSQL_DB: Group_5
