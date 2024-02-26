@@ -1,7 +1,7 @@
 database_config:
   host: "127.0.0.1"
   user: "root"
-  password: "root"
+  password: "matrix01M"
   database: "Group_5"
 
 # dataset_paths:
