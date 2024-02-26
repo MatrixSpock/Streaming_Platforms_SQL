@@ -1,0 +1,27 @@
+# Ignore config file with sensitive data
+config.yml
+
+# Ignore Python bytecode
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Ignore Jupyter notebook checkpoints
+.ipynb_checkpoints/
+
+# Ignore OS generated files
+.DS_Store  # For macOS
+Thumbs.db  # For Windows
+
+# Ignore IDE specific files
+.idea/     # For JetBrains IDEs like PyCharm
+.vscode/   # For Visual Studio Code settings
+
+# Ignore virtual environment folder
+venv/
+.venv/
+
+# Ignore other files that should not be part of the repository
+*.log
+*.env    # If you're using environment files
