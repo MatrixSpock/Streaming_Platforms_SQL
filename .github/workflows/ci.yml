@@ -28,7 +28,7 @@ jobs:
       run: mysql -h 127.0.0.1 --port 3306  -u root -p${{ secrets.DB_PASSWORD }} -e 'CREATE DATABASE IF NOT EXISTS test;'
 
     - name: Set up Python
-      uses: actions/setup-python@v4
+      uses: actions/setup-python@v5
       with:
         python-version: '3.11.8'
 
