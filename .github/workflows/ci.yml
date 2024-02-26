@@ -28,7 +28,7 @@ jobs:
     - uses: actions/checkout@v2
 
     - name: Test MySQL DB Creation
-      run: mysql -h 127.0.0.1 --port 3306  -u root -proot -e 'CREATE DATABASE IF NOT EXISTS test;'
+      run: mysql -h 127.0.0.1 --port 3306  -u root -p${{ secrets.DB_PASSWORD }} -e 'CREATE DATABASE IF NOT EXISTS test;'
 
     - name: Set up Python
       uses: actions/setup-python@v2
