@@ -12,14 +12,11 @@ jobs:
     
     services:
       mysql:
-        image: mysql:8.0  # You can choose the version you need
+        image: mysql:8.0 
         env:
-          # MYSQL_ROOT_PASSWORD: ${{ secrets.DB_PASSWORD }}
-          # MYSQL_DATABASE: ${{ secrets.DB_NAME }}
+          MYSQL_ROOT_PASSWORD: ${{ secrets.DB_PASSWORD }}
           MYSQL_PASSWORD: ${{ secrets.DB_PASSWORD }}
-          MYSQL_ROOT_PASSWORD: root
           MYSQL_DATABASE: ${{ secrets.DB_NAME }}
-          # MYSQL_PASSWORD: root
         ports:
           - '3306:3306'
         options: --health-cmd="mysqladmin ping" --health-interval=10s --health-timeout=5s --health-retries=5
@@ -75,10 +72,3 @@ jobs:
         for script in *.py; do
           python "$script"
         done
-
-    # Use the MYSQL environment variables as needed in your scripts or tests
-    # env:
-    #   MYSQL_HOST: 127.0.0.1
-    #   MYSQL_USER: root
-    #   MYSQL_PASSWORD: root
-    #   MYSQL_DB: Group_5
