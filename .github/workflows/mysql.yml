@@ -14,4 +14,4 @@ jobs:
         options: --health-cmd="mysqladmin ping" --health-interval=10s --health-timeout=5s --health-retries=3
     steps:
       - uses: actions/checkout@v1
-      - run: mysql -h 127.0.0.1 --port 8888 -u root -ppassword -e 'CREATE DATABASE IF NOT EXISTS test;'
+      - run: mysql -h 127.0.0.1 --port 8888 -u root -p password -e 'CREATE DATABASE IF NOT EXISTS test;'
