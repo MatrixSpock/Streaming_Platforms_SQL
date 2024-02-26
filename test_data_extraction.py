@@ -13,6 +13,3 @@ def test_data_extraction():
     assert len(amazon_df.columns) >= 5, "Amazon data frame has too few columns"
     assert len(disney_df.columns) >= 5, "Disney data frame has too few columns"
     assert len(netflix_df.columns) >= 5, "Netflix data frame has too few columns"
-
-    # Optionally, check the number of rows if you expect a minimum amount of data
-    # assert len(amazon_df) > 100, "Amazon data frame has too few rows"
