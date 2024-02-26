@@ -21,13 +21,14 @@ jobs:
           MYSQL_DATABASE: ${{ secrets.DB_NAME }}
           MYSQL_PASSWORD: root
         ports:
-          - 3306:3306
+          - '3306:3306'
         options: --health-cmd="mysqladmin ping" --health-interval=10s --health-timeout=5s --health-retries=5
 
     steps:
     - uses: actions/checkout@v2
 
-    - run: mysql -h 127.0.0.1 --port 8888  -u root -p root -e 'CREATE DATABASE IF NOT EXISTS test;'
+    - name: Test MySQL DB Creation
+      run: mysql -h 127.0.0.1 --port 3306  -u root -proot -e 'CREATE DATABASE IF NOT EXISTS test;'
 
     - name: Set up Python
       uses: actions/setup-python@v2
