@@ -69,6 +69,7 @@ jobs:
 
     - name: Execute converted Python scripts
       run: |
+        export RUNNING_IN_BATCH_MODE=True
         for script in *.py; do
           python "$script"
         done
