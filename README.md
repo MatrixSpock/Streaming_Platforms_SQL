@@ -21,3 +21,54 @@ To install the required Python packages, run the following command:
 
 ```sh
 pip install -r requirements.txt
+```
+# Setup Instructions
+
+To run this project, follow these steps:
+
+## 1. Clone the repository:
+```sh
+https://github.com/MatrixSpock/Streaming_Platforms_SQL.git
+```
+## 2. Navigate to the repository directory:
+```sh
+cd <repository-name>
+```
+## 3. Create a virtual environment:
+```sh
+python -m venv venv
+```
+```sh
+source venv/bin/activate # Unix/MacOS
+```
+```sh
+venv\Scripts\Activate # Windows
+```
+## 4. Install the required dependencies:
+```sh
+pip install -r requirements.txt
+```
+## 5. Database Configuration
+
+Before running the application, you need to set up your database configuration. Follow these steps:
+
+### 5.1 Create a file named `config.yml` in the root directory of the project with the following structure:
+
+```yaml
+database_config:
+  host: <your_database_host>
+  user: <your_database_user>
+  password: <your_database_password>
+```
+### 5.2 Replace <your_database_host>, <your_database_user>, <your_database_password>, and <your_database_name> with your actual database host, username, password, and database name, respectively.
+### 5.3 Save the config.yml file
+Please do not commit config.yml to your version control system. This file is listed in .gitignore for security reasons.
+
+## 6. Start the Jupyter Lab:
+```sh
+jupyter lab
+```
+OR
+```sh
+jupyter notebook
+```
